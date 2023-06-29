@@ -165,7 +165,7 @@ function handleSubmit(firstName, lastName,jobTitle,officePhone, emailAddress) {
               display: block;
               margin: 0 auto;
             "
-            src="file:///C:/Users/quin19021646/Desktop/logo.png"
+            src="https://drive.google.com/uc?export=view&id=1fkJBfoGcPc5paz5OUHm4zyML4-9W-YEV"
             alt=""
             width="200"
           /></a>
