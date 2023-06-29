@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Mlhuillier Email Signature Generator"
+    />
+    <link rel="shortcut icon" href="https://drive.google.com/uc?export=view&id=1jLVoZJ8SXbX9FsV7XtWl5uHu37Rq8SLx" type="image/x-icon" />
+    <title>ML - Email Signature Generator</title>
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/eb42c3a17f.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="C:\Users\quin19021646\Desktop\LAST NAKA\ML Signature\src\style.css" />
+
+    <script type="text/javascript">
+      window.onload = function() {
+         document.getElementById('ifYes').style.display = 'none';
+         document.getElementById('ifNo').style.display = 'none';
+     }
+     function yesnoCheck() {
+         if (document.getElementById('mlHO').checked) {
+             document.getElementById('ifYes').style.display = 'block';
+             document.getElementById('ifNo').style.display = 'none';
+             
+         } 
+         else if(document.getElementById('mlBranch').checked) {
+             document.getElementById('ifNo').style.display = 'block';
+             document.getElementById('ifYes').style.display = 'none';
+        }
+     }
+     
+     </script>
+
+  </head>
+
+
+
+  <body>
+    <div class="container">
+      <div class="app-wrapper">
+        <h1>Generate your signature here ! </h1>
+        
+        </div>
+        <hr />
+        <div class="row">
+          <!-- Left Column -->
+          <div class="col">
+            <div class="card border-0">
+              <div class="card-body">
+                <form class="signature">
+                  <div class="row mb-2">
+                    <label for="firstName" class="col-sm col-form-label"
+                      >First Name<sup class="required">*</sup></label
+                    >
+                    <div class="col-sm">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="firstName-input"
+                        aria-label="First name"
+                      />
+                    </div>
+                  </div>
+                  <div class="row mb-2">
+                    <label for="lastName" class="col-sm col-form-label"
+                      >Last Name<sup class="required">*</sup></label
+                    >
+                    <div class="col-sm">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="lastName-input"
+                        aria-label="Last name"
+                      />
+                    </div>
+                  </div>
+                  <div class="row mb-2">
+                    <label for="jobTitle" class="col-sm col-form-label"
+                      >Job Title<sup class="required">*</sup></label
+                    >
+                    <div class="col-sm">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="jobTitle-input"
+                        aria-label="Job Title"
+                      />
+                    </div>
+                  </div>
+                  <div class="row mb-2">
+                    <label for="companyData" class="col-sm col-form-label"
+                      >Company Data<sup class="required">*</sup></label>
+                  
+                    <div class="col-sm" id="companyData-input">
+                       
+                      <input type="radio" onclick="javascript:yesnoCheck();" name="yesno" id="mlHO" for="headOffice"/>&nbsp;Head Office 
+                      <br/>
+                      <input type="radio" onclick="javascript:yesnoCheck();" name="yesno" id="mlBranch" for="branchUser"/>&nbsp;Branch User 
+                      <br>
+                    </div>
+                  </div>
+         
+                  
+                  <div id="ifYes">
+                    <div class="row mb-2" >
+                      <label for="division" class="col-sm col-form-label"
+                        >Division Name<sup class="required">*</sup></label>
+
+                      <div class="col-sm" name="divisons">
+                        <select class="form-control" name="divisionnames" id="divisionInput">
+                          <option value="" disabled selected >Select Division</option>
+                          <option value="A.L.L Division">A.L.L Division</option>
+                          <option value="Accounting Division">Accounting Division</option>
+                          <option value="Central Accounting Division">Central Accounting Division</option>
+                          <option value="Finance Division">Finance Division</option>
+                          <option value="Human Res">Finance Division</option>
+                          <option value="Money Transfer Division">Money Transfer Division</option>
+                          <option value="Insurance and Special Products Division">Insurance and Special Products Division</option>
+                          <option value="Internal Audit Division">Internal Audit Division</option>
+                          <option value="Logistics Services Division">Logistics Services Division</option>
+                          <option value="Marketing Division">Marketing Division</option>
+                          <option value="Materials Management Division">Materials Management Division</option>
+                          <option value="ML Express Division">ML Express Division</option>
+                          <option value="ML Wallet Division">ML Wallet Division</option>
+                          <option value="Office of the President and CEO">Office of the President and CEO</option>
+                          <option value="Office of the Vice President and COO LNCR">Office of the Vice President and COO LNCR</option>
+                          <option value="Office of the Vice President and COO VisMin">Office of the Vice President and COO VisMin</option>
+                          <option value="Secretary and Compliance Division">Secretary and Compliance Division</option>
+                          <option value="Technology Group">Technology Group</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="row mb-2">
+                      <label for="officeAddress" class="col-sm col-form-label"
+                        >Address<sup class="required">*</sup></label
+                      >
+                      <div class="col-sm">
+                        <select class="form-control" name="officeAddress" id="officeAddress-input">
+                          <option value="" disabled selected >Address</option>
+                          <option value="ML Extension Office, 13th Av., NRA, Cebu City 6000, PH">ML Extension Office, 13th Av., NRA, Cebu City 6000, PH</option>
+                          <option value="ML Building B. Benedicto Street North Reclamation Area Cebu City 600">ML Building B. Benedicto Street North Reclamation Area Cebu City 600</option>
+                          <option value="Heart Tower Condominium 108 Valero Street, Salcedo Village Makati City 1227">Heart Tower Condominium 108 Valero Street, Salcedo Village Makati City 1227</option>
+                        </select>
+                      </div>
+                    </div>
+                </div>
+
+    
+                 <div  id="ifNo">
+                  <div class="row mb-2" name="branches">
+                    <label for="branch" class="col-sm col-form-label"
+                      >Branch Name<sup class="required">*</sup></label
+                    >
+                    <div class="col-sm">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="branchInput"
+                        aria-label="Branch"/>
+                    </div>
+                  </div>
+                  <div class="row mb-2 ">
+                    <label for="branchAddress" class="col-sm col-form-label">
+                      Address<sup class="required">*</sup></label
+                    >
+                    <div class="col-sm">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="branchAddress-input"
+                        aria-label="Address"
+                      />
+                    </div>
+                  </div>
+                </div>
+                  <div class="row mb-2">
+                    <label for="officePhone" class="col-sm col-form-label"
+                      >Office Phone
+                      <sup class="required">*</sup>
+                    </label>
+                    <div class="col-sm">
+                      <input
+                        type="tel"
+                        class="form-control"
+                        id="officePhone-input"
+                        aria-label="Office Phone"
+                      />
+                    </div>
+                  </div>
+                  <!-- <div class="row mb-1">
+                    <label for="mobilePhone" class="col-sm col-form-label"
+                      >Mobile Phone<sub>
+                        <em>(include the country code)</em>
+                      </sub></label
+                    >
+                    <div class="col-sm">
+                      <input
+                        type="tel"
+                        class="form-control"
+                        id="mobilePhone-input"
+                        aria-label="Mobile Phone"
+                      />
+                    </div>
+                  </div> -->
+                  <div class="row mb-2">
+                    <label for="emailAddress" class="col-sm col-form-label"
+                      >Email<sup class="required">*</sup>
+                      <address></address
+                    ></label>
+                    <div class="col-sm-6">
+                      <div class="input-group mb-1">
+                        <input
+                          type="text"
+                          class="form-control col-sm-1"
+                          id="emailAddress-input"
+                          aria-label="Email Address"
+                        />
+                        <span class="input-group-text col-sm" id="basic-addon1"
+                          >@mlhuillier.com</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                    <button type="submit" class="btn btn-success" id="submit">
+                      Submit
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <!-- Right Column -->
+          <div class="col">
+            <div class="card invisible" id="card">
+              <div class="card-body border rounded">
+                <div class="row">
+                  <!--left column -->
+                  <div class="col">
+                    <div id="signatureGenerated"></div>
+                    <br />
+                    <div id="copySignature2" class="invisible">
+                      <div
+                        class="d-grid gap-2 d-md-flex justify-content-md-end"
+                      >
+                        
+                        <button
+                          type="submit"
+                          class="btn btn-success"
+                          id="copyToClipboard2"
+                          ;
+                        >
+                          Copy Signature
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--Text Area -->
+          <div class="row mb-5">
+            <div class="col-7">
+              <div class="card border-0">
+                <div class="card-body">
+                  <div id="copySignature" class="invisible">
+                    <!-- <label for="emailSignature" class="col-sm col-form-label"
+                      ><strong>Email Signature</strong>
+                    </label>
+                    <textarea
+                      name="signatureOutput"
+                      id="signatureHtml"
+                      cols="70"
+                      rows="9"
+                    ></textarea>
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                      <span class="instruction"></span
+                      ><button
+                        type="submit"
+                        class="btn btn-success"
+                        id="copyToClipboard"
+                        ;
+                      >
+                        Copy Code
+                      </button>
+                    </div> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <footer>
+          <span class="copyright"
+            >© 2023 - ML Signature | Last update June 30, 2023</span
+          >
+          <div class="bestView">(Best view with Google Chrome Browser)</div>
+        </footer>
+      </div>
+    </div>
+  </body>
+  <script src="src/index.js"></script>
+</html>
