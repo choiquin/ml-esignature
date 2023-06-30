@@ -46,7 +46,19 @@
      }
      
      </script>
+<style>
+  .my-btn-success {
+  color: #fff;
+  background-color: #ff0000;
+  border-color: #ec7070;
+}
+.my-btn-success:hover {
+  color: #fff;
+  background-color: #3f3e3e;
+  border-color: #b6b1b1;
+}
 
+</style>
   </head>
 
 
@@ -203,21 +215,7 @@
                       />
                     </div>
                   </div>
-                  <!-- <div class="row mb-1">
-                    <label for="mobilePhone" class="col-sm col-form-label"
-                      >Mobile Phone<sub>
-                        <em>(include the country code)</em>
-                      </sub></label
-                    >
-                    <div class="col-sm">
-                      <input
-                        type="tel"
-                        class="form-control"
-                        id="mobilePhone-input"
-                        aria-label="Mobile Phone"
-                      />
-                    </div>
-                  </div> -->
+          
                   <div class="row mb-2">
                     <label for="emailAddress" class="col-sm col-form-label"
                       >Email<sup class="required">*</sup>
@@ -238,7 +236,7 @@
                     </div>
                   </div>
                   <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                    <button type="submit" class="btn btn-success" id="submit">
+                    <button type="submit" class="btn my-btn-success" id="submit">
                       Submit
                     </button>
                   </div>
@@ -262,7 +260,7 @@
                         
                         <button
                           type="submit"
-                          class="btn btn-success"
+                          class="btn my-btn-success"
                           id="copyToClipboard2"
                           ;
                         >
@@ -282,26 +280,7 @@
               <div class="card border-0">
                 <div class="card-body">
                   <div id="copySignature" class="invisible">
-                    <!-- <label for="emailSignature" class="col-sm col-form-label"
-                      ><strong>Email Signature</strong>
-                    </label>
-                    <textarea
-                      name="signatureOutput"
-                      id="signatureHtml"
-                      cols="70"
-                      rows="9"
-                    ></textarea>
-                    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                      <span class="instruction"></span
-                      ><button
-                        type="submit"
-                        class="btn btn-success"
-                        id="copyToClipboard"
-                        ;
-                      >
-                        Copy Code
-                      </button>
-                    </div> -->
+                   
                   </div>
                 </div>
               </div>
