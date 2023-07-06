@@ -62,7 +62,7 @@ function handleSubmit(firstName, lastName,jobTitle,officePhone, emailAddress) {
 
 
 
-  signature.innerHTML = `<table style="min-width:700px; vertical-align:-webkit-baseline-middle; font-size: medium;font-family: Arial;" cellspacing="0" cellpadding="0">
+  signature.innerHTML = `<table style="min-width:715px; vertical-align:-webkit-baseline-middle; font-size: medium;font-family: Arial;" cellspacing="0" cellpadding="0">
     <tbody>
       <tr style="height: 12px">
         <td style="height: 120px"><a href="https://mlhuillier.com/" target="_blank">
