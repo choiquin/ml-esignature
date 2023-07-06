@@ -115,7 +115,7 @@ function handleSubmit(firstName, lastName,jobTitle,officePhone, emailAddress) {
           margin: 5px;
           font-size: 12px;
           line-height: 16px; text-transform: lowercase;">
-        ${officePhone}&nbsp;|&nbsp; 
+          +63 ${officePhone}&nbsp;| &nbsp; 
         <a
         style="
           text-decoration: underline;
