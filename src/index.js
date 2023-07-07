@@ -139,7 +139,7 @@ function handleSubmit(firstName, lastName,jobTitle,officePhone, emailAddress) {
   </table>
   </tr>
       <tr style="height: 20px;  max-width: 230px;">
-      <p style="font-size: 9px;text-justify;max-width:700px; text-transform: none;">
+      <p align="justify" style="font-size: 9px;max-width:700px; text-transform: none;">
       This email is confidential and is intended only for the use of the individual to whom it is addressed. Any views or opinion presented are solely those of author and do not necessarily represent the company's. M Lhuillier accepts no liability for the content of this email, or for the consequences of any actions taken on the basis of the information provided. if you are not the intended recipient, be advised that you have received this email in error and that the use, dissemination, forwarding, printing, or copying of this email is strictly prohibited. If you have received this email in error, please notify the sender and immediately destroy all copies of the communication. For more information, kindly email 
       <a style="
       text-decoration: underline;
